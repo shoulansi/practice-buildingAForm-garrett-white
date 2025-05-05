@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <header><h1>Let Me Know Your Thoughts!</h1></header><hr>
+    
+    <form action="/submit" method ="post">
 
+ <fieldset>
+    <label for="name"><h3>Name:</h3></label>
+    <input type="text" id="name" name="name" placeholder="Please Enter Your Name:" required>
+
+    <label for="email"><h3>Email:</h3></label>
+    <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+
+    <label for="password"><h3>Password:</h3></label>
+    <input type="password" id="password" maxlength="10" name="password" required>
+</fieldset>
+    
+<fieldset>
+    <legend><h3>Feedback Category: How Do You Feel?</h3></legend>
+    <select id="feedback" name="feedback">
+        <option value="" selected>Please Choose An Option...</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="notsure">Not Sure</option>
+        <option value="die">Die</option>
+    </select>
+</fieldset>
+
+<fieldset>
+    <legend><h3>Preferred Contact Method:</h3></legend>
+    <label for="email">
+    <input type="radio" id="email" name="contact" value="email">
+     Email
+    </label>
+    
+    <label for="phone">
+    <input type="radio" id="phone" name="contact" value="phone">
+     Phone
+    </label>
+
+</fieldset>
+
+<fieldset>
+    <legend><h3>Select Your Interests</h3></legend>
+    <label for="coding"><input type="checkbox" id="coding" name="interests" value="coding">Coding</label>
+    <label for="cooking"><input type="checkbox" id="cooking" name="interests" value="coding">Cooking</label>
+    <label for="dnd"><input type="checkbox" id="dnd" name="interests" value="dnd">Dungeons & Dragons</label>
+
+</fieldset>
+
+<fieldset>
+    <legend><h3>Let Me Know Anything Else!</h3></legend>
+    <textarea>Enter Message Here...</textarea>
+</fieldset>
+<br>
+<button>Submit</button>
+
+</body>
+</html>
